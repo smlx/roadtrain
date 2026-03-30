@@ -10,7 +10,9 @@
 
 ## Overview
 
-Roadtrain is a [neovim](https://github.com/neovim/neovim) plugin that provides a visual warning when lines are very long by highlighting any parts over a given column count.
+Roadtrain is a [neovim](https://github.com/neovim/neovim) plugin that provides a visual warning when lines are very long by highlighting any parts over a configurable column limit.
+
+It is a re-implementation of [vim-lengthmatters](https://github.com/whatyouhide/vim-lengthmatters) in lua, reduced to the minimum functionality that I personally use.
 
 ## Installation
 
@@ -30,7 +32,7 @@ require('roadtrain').setup()
 
 ## Usage
 
-The plugin is enabled by default.
+The plugin enables highlighting by default.
 Use `<leader>t` to toggle highlighting in a window.
 
 By default in neovim `<leader>` is `\`.

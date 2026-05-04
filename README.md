@@ -44,19 +44,20 @@ The defaults are shown below.
 
 ```lua
 require('roadtrain').setup({
-  -- columns greater than this number containing text are highlighted
-  column_limit = 80,
-  -- use this highlight group on the text
-  highlight_group = 'ErrorMsg',
-  -- toggle highlighting using this key
-  toggle_key = '<leader>l',
-  -- windows default to highlighting long lines
-  default_on = true,
-  -- do not highlight these filetypes by default when default_on is enabled
-  exclude_filetypes = {
-    markdown = true,
-    text = true,
-    help = true,
-  }
+	-- columns greater than this number containing text are highlighted
+	column_limit = 80,
+	-- use this highlight group on the text
+	highlight_group = "ErrorMsg",
+	-- toggle highlighting using this key
+	toggle_key = "<leader>l",
+	-- windows default to highlighting long lines
+	default_on = true,
+	-- do not highlight these filetypes by default when default_on is enabled
+	exclude_filetypes = {
+		markdown = true,
+		text = true,
+		help = true,
+		qf = true,
+	},
 })
 ```
